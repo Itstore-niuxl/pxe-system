@@ -1,0 +1,9 @@
+pinpai:惠普
+xinghao:P840AR
+raid:输入要做的raid信息
+
+system:Ubuntu
+banben:18.04
+yuyan:cn
+fangan:moren
+package:morenp
