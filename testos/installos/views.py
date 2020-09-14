@@ -1,6 +1,5 @@
 from django.shortcuts import render
 import subprocess
-import json
 
 
 def index(request):

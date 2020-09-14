@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>智能装机</title>
-    <style>
-        body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0e0e0;
-  font-family: Montserrat, sans-serif;
-  line-height: 1.5;
-  background: linear-gradient(160deg, #4567b2 20%, #8ab9ff 20%, #8ab9ff 80%, #4567b2 80%);
-}
+   <title>NIU智能装机系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    </style>
+<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+
+<link href="../../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
+<div class="main">
 <body>
 已生成自动部署文件，服务器连接网线，pxe启动<br>
 系统部分信息如下：<br>
@@ -34,4 +28,5 @@
 {% endif %}
 <a href="{% url 'shouye' %}">返回</a>
 </body>
+</div>
 </html>

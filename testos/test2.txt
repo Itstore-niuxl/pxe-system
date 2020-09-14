@@ -1,14 +1,7 @@
 pinpai:DELL
 xinghao:H310
-raid:输入要做的raid信息
-
-system:RedHat
-banben:7.8
+system:Centos
+banben:7.4
 yuyan:cn
-fangan:zidingyif
-boot:200
-swap:32468
-root:12311
-qitan01:/data
-qitas01:1234
+fangan:moren
 package:morenp
