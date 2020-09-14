@@ -307,9 +307,13 @@ $("#nav-1 .slide1").css({ left: +current.left, width: currentWidth });
     <label>Swap分区：</label>
 <input name="swap" type="text" size="20" value="">M<br>
     <label>/ 分区：</label>
-<input name="root" type="text" size="20" value="">M<br>
-    <label>其他分区：</label>
-<input name="qita" type="text" size="20" value="">M<br>
+<input name="root" type="text" size="20" value="">M
+    (根分区"/"为剩余所有空间时，填写"1")<br>
+    <label>其他分区：</label><br>
+    <label>分区名01：</label>
+<input name="qitan01" type="text" size="10" value=""><br>
+    <label>分区大小：</label>
+<input name="qitas01" type="text" size="10" value="">
 <H3>软件包信息</H3>
 软件包
 <input type="radio" name="package" value="morenp" checked>默认

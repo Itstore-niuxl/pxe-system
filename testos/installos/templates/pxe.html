@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能装机</title>
+    <style>
+        body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5;
+  background: linear-gradient(160deg, #4567b2 20%, #8ab9ff 20%, #8ab9ff 80%, #4567b2 80%);
+}
+
+    </style>
+</head>
+<body>
+已生成自动部署文件，服务器连接网线，pxe启动<br>
+系统部分信息如下：<br>
+系统：{{ system }}<br>
+版本：{{ banben }}<br>
+语言：{{ lang }}<br>
+{% if fangan == "zidingyif" %}
+    分区信息：<br>
+    boot:{{ boot }}M<br>
+    swap:{{ swap }}M<br>
+    /:{{ root }}M<br>
+    其他：{{ qitan01 }}:{{ qitas01 }}M<br>
+{% endif %}
+{% if fangan == "moren" %}
+    分区：默认<br>
+{% endif %}
+<a href="{% url 'shouye' %}">返回</a>
+</body>
+</html>

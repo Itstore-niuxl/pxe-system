@@ -19,7 +19,8 @@ def reg(request):
         boot = request.POST.get('boot')
         swap = request.POST.get('swap')
         root = request.POST.get('root')
-        qita = request.POST.get('qita')
+        qitan01 = request.POST.get('qitan01')
+        qitas01 = request.POST.get('qitas01')
         package = request.POST.get('package')
         zidingyishuru = request.POST.get('zidingyishuru')
         with open('test2.txt','w') as f:
@@ -38,8 +39,9 @@ def reg(request):
                        f.write("boot:"+boot+"\n")
                        f.write("swap:"+swap+"\n")
                        f.write("root:"+root+"\n")
-                       if qita != '':
-                           f.write("qita:"+qita+"\n")
+                       if qitan01 != '':
+                           f.write("qitan01:"+qitan01+"\n")
+                           f.write("qitas01:"+qitas01+"\n")
             else:
                        f.write("fangan:"+fangan+"\n")
             if package == 'zidingyip':
@@ -51,7 +53,20 @@ def reg(request):
             #f.write("zidingyi:"+zidingyi+"\n")
             f.close()
         ret = subprocess.run(["sh", "/Users/niuxinglei/123.sh"])
+        context = {
+            'system':system,
+            'banben':banben,
+            'fangan':fangan,
+            'lang':lang,
+            'boot':boot,
+            'swap':swap,
+            'root':root,
+            'qitan01':qitan01,
+            'qitas01':qitas01,
+        }
         print(ret)
-    return render(request, 'index.html')
+    return render(request, 'pxe.html', context=context)
+
+
 # Create your views here.
 

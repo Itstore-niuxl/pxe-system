@@ -19,7 +19,7 @@ from django.urls import path
 from installos.views import index, reg
 
 urlpatterns = [
-    url(r'^$', index),
+    url(r'^$', index,name="shouye"),
     path('admin/', admin.site.urls),
     path('reg/', reg,name='check'),
 ]
