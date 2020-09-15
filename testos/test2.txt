@@ -1,7 +1,12 @@
 pinpai:DELL
 xinghao:H310
-system:Centos
-banben:7.4
-yuyan:cn
-fangan:moren
+system:Ubuntu
+banben:16.04
+yuyan:en
+fangan:zidingyif
+boot:200
+swap:1212
+root:1233
+qitan01:/data
+qitas01:232323
 package:morenp

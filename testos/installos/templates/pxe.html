@@ -9,11 +9,13 @@
 
 <link href="../../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<div class="main">
 <body>
-已生成自动部署文件，服务器连接网线，pxe启动<br>
-系统部分信息如下：<br>
-系统：{{ system }}<br>
+<div class="main">
+<div class="agileinfo_main_grid">
+<div class="w3agile_budget">
+    <h4>已生成自动部署文件，服务器连接网线，pxe启动</h4>
+    <h4>系统部分信息如下：</h4>
+<h4>系统：{{ system }}<br>
 版本：{{ banben }}<br>
 语言：{{ lang }}<br>
 {% if fangan == "zidingyif" %}
@@ -25,8 +27,10 @@
 {% endif %}
 {% if fangan == "moren" %}
     分区：默认<br>
-{% endif %}
-<a href="{% url 'shouye' %}">返回</a>
-</body>
+{% endif %}</h4>
+    <h4><a href="{% url 'shouye' %}">返回</a></h4>
 </div>
+</div>
+</div>
+</body>
 </html>
