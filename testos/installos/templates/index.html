@@ -14,28 +14,28 @@
    var x = document.getElementById("first");
    var y = document.getElementById("second");
    y.options.length = 0; // 清除second下拉框的所有内容
-   if(x.selectedIndex == 0)
+   if(x.selectedIndex == 1)
    {
 		y.options.add(new Option("H710"));
 		y.options.add(new Option("H310", false, true));
    }
  
-   if(x.selectedIndex == 1)
+   if(x.selectedIndex == 2)
    {
 		y.options.add(new Option("LSI2208"));
 		y.options.add(new Option("LSI2308", false, true));
    }
-   if(x.selectedIndex == 2)
+   if(x.selectedIndex == 3)
    {
         y.options.add(new Option("LSI2308"));
 		y.options.add(new Option("LSI2208"));
    }
-   if(x.selectedIndex == 3)
+   if(x.selectedIndex == 4)
    {
         y.options.add(new Option("P840"));
 		y.options.add(new Option("P840AR"));
    }
-   if(x.selectedIndex == 4)
+   if(x.selectedIndex == 5)
    {
         y.options.add(new Option("LSI2308"));
 		y.options.add(new Option("LSI2208"));
@@ -97,6 +97,7 @@ function change_os()
 	
 			<div class="styled-input">
 				<select id="first" name="pinpai" onChange="change()">
+                    <option>品牌</option>
                     <option>DELL</option>
                     <option>曙光</option>
                     <option>浪潮</option>
@@ -107,8 +108,9 @@ function change_os()
             </div>
             <div class="styled-input">
                 <select id="second" name="xinghao">
+                    <option>阵列卡型号</option>
                     <option>H710</option>
-                    <option selected="selected">H310</option>
+                    <option>H310</option>
                 </select>
                 <span></span>
 			</div>
